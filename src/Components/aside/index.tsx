@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 import {CiCalendarDate} from "react-icons/ci";
 import {MdFastfood} from "react-icons/md";
 import {BsFillTicketFill} from "react-icons/bs";
-import {AiOutlinePercentage} from "react-icons/ai";
 
 
 

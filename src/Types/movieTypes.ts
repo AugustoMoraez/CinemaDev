@@ -3,7 +3,6 @@ export type movie  ={
     title: string ,
     subtitle: string,
     trailer:string,
-    tumbnail:string,
     pageBanner: string,
     alternativePageBanner?: string,
     category: string,

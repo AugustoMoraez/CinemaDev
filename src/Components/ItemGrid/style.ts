@@ -11,7 +11,7 @@ export const Item = styled.div<prop>`
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+    
     transition: 0.3s;
     div{
     width: 100%;
@@ -22,8 +22,12 @@ export const Item = styled.div<prop>`
    
     }
     button{
+        cursor: pointer;
         position: absolute;
-        background:linear-gradient(10deg,  rgba(255,0,80,1) 35%, rgba(0,212,255,1) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(255,0,80,1) 35%, rgba(0,212,255,1) 100%);
         color: #fff;
         font-size: 24px;
         width: 60px;
@@ -45,7 +49,8 @@ export const Item = styled.div<prop>`
   color: #666666;
     }
     &:hover{
-        transform: scale(0.9);
+        background-color: #555;
+        
     }
     
 `;

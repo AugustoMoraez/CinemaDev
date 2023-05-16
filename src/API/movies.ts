@@ -6,7 +6,7 @@ export const movies:movie[] = [
         id: 1,
         title: "avatar 2",
         trailer:"https://www.youtube.com/watch?v=G1fymUSI4cc",
-        tumbnail:"",
+       
         subtitle: "THE WAY OF WATER",
         pageBanner: "https://images3.alphacoders.com/129/1292401.jpg",
         category: "Ação",
@@ -15,7 +15,7 @@ export const movies:movie[] = [
     },
     {
         id: 2,
-        tumbnail:"",
+        
         title: "jonh wick 4",
         trailer:"https://www.youtube.com/watch?v=gZtmzT9Wgrw",
         subtitle: "BABA YAGA",
@@ -27,7 +27,7 @@ export const movies:movie[] = [
     {
         id: 3,
         title: "super mario",
-        tumbnail:"",
+       
         trailer:"https://www.youtube.com/watch?v=cDNkh5WybZo",
         subtitle: "O FILME",
         pageBanner: "https://images3.alphacoders.com/130/thumb-1920-1301279.jpg",
@@ -38,17 +38,17 @@ export const movies:movie[] = [
     {
         id: 4,
         title: "a freira",
-        tumbnail:"",
+      
         subtitle: "ORIGEM DO MAL",
         trailer:"https://www.youtube.com/watch?v=4V44ew-laC4",
-        pageBanner: "https://pbs.twimg.com/media/FR345xDWQAA0oyU?format=jpg&name=large",
+        pageBanner: "https://macmagazine.com.br/wp-content/uploads/2019/05/16-freira.jpg",
         category: "Terror",
         ticketPrice: 18,
         descrition: "Um padre é assassinado. Um mal está se espalhando. A sequência para o sucesso mundial A Freira irá acompanhar a Irmã Irene, que novamente se vê cara a cara com a força demoníaca Valak – o demônio freira”. Ainda bem superficial, mas que já garante o retorno de alguns rostos bem conhecidos — e temidos."
     },
     {
         id: 5,
-        tumbnail:"",
+     
         title: "projeto X",
         subtitle: "Uma festa lendaria",
         trailer:"https://www.youtube.com/watch?v=kFwGmQIe-rU",
@@ -59,7 +59,7 @@ export const movies:movie[] = [
     },
     {
         id: 6,
-        tumbnail:"",
+       
         title: "homem aranha 3",
         subtitle: "No way home",
         trailer:"https://www.youtube.com/watch?v=FDNNHh7TRN0",
@@ -72,7 +72,7 @@ export const movies:movie[] = [
         id: 7,
         title: "os simpsons",
         subtitle: "O filme",
-        tumbnail:"",
+        
         trailer:"https://www.youtube.com/watch?v=7UPVGlMjPLw",
         pageBanner: "https://images4.alphacoders.com/114/1148429.jpg",
         category: "Infantil",
@@ -82,7 +82,7 @@ export const movies:movie[] = [
     {
         id: 8,
         title: "vingadores",
-        tumbnail:"",
+       
         subtitle: "Ultimato",
         trailer:"https://www.youtube.com/watch?v=4QRdB4RAQMs",
         pageBanner: "https://img.elo7.com.br/product/zoom/2168CA6/banner-painel-guerra-infinita-3x2m-festa-banner.jpg",
@@ -92,7 +92,7 @@ export const movies:movie[] = [
     },
     {
         id: 9,
-        tumbnail:"",
+       
         title: "annabele 2",
         subtitle: "A criação do mal",
         trailer:"https://www.youtube.com/watch?v=pYdgJAaHSUY",
@@ -104,7 +104,7 @@ export const movies:movie[] = [
     {
         id: 10,
         title: "eternos",
-        tumbnail:"",
+      
         subtitle: "IN THE BENNING´s",
         trailer:"https://www.youtube.com/watch?v=PJza3ZaFeAU",
         pageBanner: "https://img.olhardigital.com.br/wp-content/uploads/2021/10/eternos-x.jpg",

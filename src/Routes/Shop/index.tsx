@@ -1,5 +1,5 @@
 import { PageContainer, Grid } from "../in-theatres/style";
-import { GridItem } from "../../Components/ItemCart";
+import { GridItem } from "../../Components/ItemGrid";
 import { foods } from "../../API/foods";
 
 export const Shop = () => {

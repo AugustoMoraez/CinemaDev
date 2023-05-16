@@ -3,7 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 export const slice = createSlice({
     name: "background",
     initialState: {
-        movie: {
+       
+        MoviePage:{
             id: 1,
             title: "avatar",
             trailer: "https://www.youtube.com/watch?v=G1fymUSI4cc",
@@ -15,11 +16,12 @@ export const slice = createSlice({
         }
     },
     reducers:{
-        setMovie: (state, action) => {
-            state.movie = action.payload
+        
+        setMoviePage: (state, action) => {
+            state.MoviePage = action.payload
         }
     }
 })
 
-export const { setMovie } = slice.actions;
+export const { setMoviePage } = slice.actions;
 export default slice.reducer;

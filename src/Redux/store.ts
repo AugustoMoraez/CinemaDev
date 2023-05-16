@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import bgReducer from "./Reducers/movieReducer";
+import movieReducer from "./Reducers/movieReducer";
 
 export const store = configureStore({
    reducer:{
-    bg:bgReducer
+    movie:movieReducer
    }
 })
 

@@ -39,7 +39,7 @@ export const Home = () => {
                 </div>
                 <div className="bar"></div>
                 <div className="buttons">
-                    <button ><BsFillTicketFill/>Ingresso</button>
+                    <button><BsFillTicketFill/>Ingresso</button>
                     <a href="https://www.youtube.com/watch?v=x5pZI-DmtrE" target="_blank">Trailer</a>
                 </div>
             </BannerArea>
@@ -49,12 +49,11 @@ export const Home = () => {
                 </div>
                 <div className="resultArea">
                     {
-                        filter.length === 0
+                        filter.length === 0 
                         ?
                         movies.map((item)=>(
                             <ItemSearch key={item.id} data={item} />
                         ))
-                        
                         :
                         filter.map((item)=>(
                             <ItemSearch key={item.id} data={item} />
