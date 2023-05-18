@@ -128,7 +128,11 @@ export const SearchArea = styled.div`
     .resultArea{
         display: flex;
         flex-direction: column;
-        margin:35px 20px  ;
+        margin:35px 20px ;
+
+        a{
+            color: #FF0050;
+        }
     }
     
     @media(max-width:810px){

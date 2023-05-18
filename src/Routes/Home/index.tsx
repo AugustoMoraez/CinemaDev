@@ -1,6 +1,6 @@
 import { PageContainer,BannerArea,SearchArea} from "./style";
 import {BsFillTicketFill} from "react-icons/bs";
-
+import { Link } from "react-router-dom";
 import { InputSearch } from "../../Components/inputSearch";
 import { ItemSearch } from "../../Components/searchAreaItem";
 import { movies } from "../../API/movies";
@@ -12,17 +12,20 @@ import { movie } from "../../Types/movieTypes";
 
 
 export const Home = () => {
-    
+    const[filterVoid,setFilterVoid] = useState(false)
     const[filter,setFilter] = useState<movie[]>([]);
       
     const handleInputFilter = (e:ChangeEvent<HTMLInputElement>) => {
+        setFilterVoid(false);
         let filterName = e.target.value;
         let newArray:movie[] = [];
         for(let i = 0 ; i<=9 ; i++){
             if(movies[i].title.includes(filterName)){
                 newArray.push(movies[i]);    
             }
-            
+        }
+        if(filter.length === 0){
+            setFilterVoid(true);
         }
         setFilter(newArray)
     }
@@ -49,11 +52,13 @@ export const Home = () => {
                 </div>
                 <div className="resultArea">
                     {
-                        filter.length === 0 
+                        filterVoid === true 
                         ?
-                        movies.map((item)=>(
-                            <ItemSearch key={item.id} data={item} />
-                        ))
+                        <div>
+                            Filme não encontrado<br/>
+                            <Link to="/InTheaters">Veja sugestões aqui</Link>
+                            
+                        </div>
                         :
                         filter.map((item)=>(
                             <ItemSearch key={item.id} data={item} />
