@@ -15,7 +15,6 @@ export const movies:movie[] = [
     },
     {
         id: 2,
-        
         title: "jonh wick 4",
         trailer:"https://www.youtube.com/embed/gZtmzT9Wgrw",
         subtitle: "BABA YAGA",

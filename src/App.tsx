@@ -9,6 +9,7 @@ import { Home } from "./Routes/Home";
 import { Shop } from "./Routes/Shop";
 import { Theatres } from "./Routes/in-theatres";
 import { Menu } from "./Components/Menu/Icon";
+import {PlaceChairPage} from "./Routes/SelectPlaceRoom"
 import { PageMovie } from "./Routes/page-movie";
 //hooks
 import { useState } from "react";
@@ -36,6 +37,7 @@ export const App = () => {
               <Route path="/" element={<Home/>}/>
               <Route path="/InTheaters/:slug" element={<PageMovie/>}/> 
               <Route path="/InTheaters" element={<Theatres/>}/>
+              <Route path="/select-room" element={<PlaceChairPage id={1}/>}/>
               <Route path="/Shop" element={<Shop/>}/> 
             </Routes>
             <MobileMenu/>

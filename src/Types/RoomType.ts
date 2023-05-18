@@ -1,12 +1,12 @@
 import { movie } from "./movieTypes"
 
-type cadeira = {
+export type chair = {
     id: number, status: "livre" | "ocupado"
 }
 
 type cronograma = {
     horario: string,
-    cadeiras: cadeira[]
+    chairs: chair[]
 }
 
 export type Sala = {
