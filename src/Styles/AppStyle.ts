@@ -32,5 +32,7 @@ export const Content = styled.div`
     height: 100vh;
     width: 100%;
     overflow-y: hidden;
-
+    @media (max-width:810px) {
+        padding-bottom:75px ;
+    }
 `;

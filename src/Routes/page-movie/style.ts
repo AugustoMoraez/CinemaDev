@@ -20,4 +20,5 @@ export const PageContainer = styled.div<Prop>`
 
         
     }
+    
 `;

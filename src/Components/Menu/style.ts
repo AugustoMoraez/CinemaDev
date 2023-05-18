@@ -61,7 +61,9 @@ export const IconMenu = styled.div<IconMenuType>`
             transform: ${props => props.toggle ? "rotate(-45deg)" : "rotate(0)" };
         }
     }
-    
+    @media (max-width:810px) {
+        display: none;
+    }
     
     
     `;

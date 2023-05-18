@@ -18,24 +18,40 @@ export const Menu = styled.aside<menuType>`
     background-color: #000;
 
     nav ul,li{
-        list-style: none;
-        width: ${props => props.display ? "auto" : "0px" };
+        width: ${props => props.display ? "auto" : "0px" };       
+    }
+    nav ul li {
+        margin-top: 50px;
+        cursor: pointer;
         
+        a{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            
+        }
         svg{
             color: #fff;
             height: 40px;
             width: ${props => props.display ? "40px" : "0px" };
             transition: 0.6s;
-
-            &:hover{
-                color: #FF0050;
-                
+        }
+        span{
+            color: #000;
+            font-size: 10px;
+            transition: 0.5s;
+        }
+        &:hover{
+            svg{
+                color:#ff0050;
+            }
+            span{
+                color:#fff;
             }
         }
-    }
-    nav ul li {
-        margin-top: 50px;
-        cursor: pointer;
+        
+        
     }
 
 `;

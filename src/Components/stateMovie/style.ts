@@ -51,7 +51,9 @@ export const MovieContainer = styled.div`
     margin-top: 20px;
     font-size: 20px;
   }
-
+  @media (max-width:810px) {
+        padding-bottom:90px ;
+    }
 
 `;
 export const Iframe = styled.iframe`

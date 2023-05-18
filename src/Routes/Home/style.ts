@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const PageContainer = styled.div`
-    overflow: scroll;
+    
     overflow-x: hidden;
     color: #fff;
     display: flex;

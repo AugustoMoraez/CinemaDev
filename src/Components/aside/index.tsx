@@ -1,7 +1,7 @@
 //components
 import {Menu} from "./style";
 //libs
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 //icons
 import {CiCalendarDate} from "react-icons/ci";
 import {MdFastfood} from "react-icons/md";
@@ -16,16 +16,33 @@ type asideType = {
 
 export const Aside = ({display}:asideType) => {
 
-    const nav = useNavigate();
-    
+  
     
     return(
         <Menu display = {display} >
             <nav>
                 <ul>
-                    <li onClick={()=>nav("/Realeses")}><CiCalendarDate/></li>
-                    <li onClick={()=>nav("/InTheaters")}><BsFillTicketFill/></li>
-                    <li onClick={()=>nav("/Shop")}><MdFastfood/></li>
+                    <li>
+                       <Link to="/Realeses">
+                            <CiCalendarDate/>
+                            <span>Lançamentos</span>
+                       </Link>
+                       
+                    </li>
+
+                    <li>
+                        <Link to="/InTheaters">
+                            <BsFillTicketFill/>
+                            <span>Em cartaz</span>
+                        </Link>
+                    </li>
+
+                    <li>
+                        <Link to="/Shop">
+                            <MdFastfood/>
+                            <span>FastFood</span>
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         </Menu>

@@ -1,6 +1,7 @@
 //Components
 import { Main, Bg, Container,Content } from "./Styles/AppStyle";
 import {Aside} from "./Components/aside";
+import { MobileMenu } from "./Components/Mobile";
 //Libs
 import {Route, Routes} from "react-router-dom";
 //Paginas
@@ -39,6 +40,7 @@ export const App = () => {
               <Route path="/Shop" element={<Shop/>}/> 
               <Route path="/Realeses" element={<MoviesRelease/>}/>
             </Routes>
+            <MobileMenu/>
           </Content>
         </Container>
       </Bg>

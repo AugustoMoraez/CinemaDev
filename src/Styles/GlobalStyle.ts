@@ -17,6 +17,9 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     transition: 0.5s;
   }
+  ul,li{
+    list-style: none;
+  }
   
 `;
 //font logo name font-family: 'Quicksand', sans-serif;
