@@ -13,7 +13,7 @@ import { movie } from "../../Types/movieTypes";
 
 export const Home = () => {
     const[filterVoid,setFilterVoid] = useState(false)
-    const[filter,setFilter] = useState<movie[]>([]);
+    const[filter,setFilter] = useState<movie[]>([movies[6],movies[9],movies[3]]);
       
     const handleInputFilter = (e:ChangeEvent<HTMLInputElement>) => {
         setFilterVoid(false);

@@ -5,6 +5,7 @@ export const Item = styled.div`
     justify-content: space-between;
     align-items: center;
     background-color: #ff0050;
+    border: 2px solid #fff;
     opacity: 0.8;
     width: 100%;
     height: 70px;

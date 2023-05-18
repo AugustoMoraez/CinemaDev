@@ -40,7 +40,7 @@ export const InputArea = styled.div<InputAreaType>`
         background: none;
         color: #fff;
         border: 0;
-        border-bottom:1px solid #FF0050;
+        border-bottom:1px solid #FFF;
         outline: none;
     }
 
