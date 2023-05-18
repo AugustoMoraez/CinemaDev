@@ -37,7 +37,7 @@ export const App = () => {
               <Route path="/" element={<Home/>}/>
               <Route path="/InTheaters/:slug" element={<PageMovie/>}/> 
               <Route path="/InTheaters" element={<Theatres/>}/>
-              <Route path="/select-room" element={<PlaceChairPage id={1}/>}/>
+              <Route path="/select-room/:slug" element={<PlaceChairPage id={1}/>}/>
               <Route path="/Shop" element={<Shop/>}/> 
             </Routes>
             <MobileMenu/>

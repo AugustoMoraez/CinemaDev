@@ -1,12 +1,18 @@
 import { MovieContainer, Iframe} from "./style";
 import { movie } from "../../Types/movieTypes";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 type prop = {
     movie:movie
 }
 
 export const StateMovie = ({movie}:prop) => {
+    const nav = useNavigate();
+    const dispatch = useDispatch();
+    const NextPage = () => {
+        nav(`string text ${movie.title} string text`);
+    }
     return(
         <MovieContainer>
             <h3><Link to="/">CineDev</Link></h3>
@@ -20,7 +26,7 @@ export const StateMovie = ({movie}:prop) => {
                 <b>{movie.category.toUpperCase()}</b>
             </div>
            
-            <button>+ Ingresso</button>
+            <button >+ Ingresso</button>
             
         </MovieContainer>
     )
