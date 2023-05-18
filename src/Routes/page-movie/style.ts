@@ -12,8 +12,9 @@ export const PageContainer = styled.div<Prop>`
     background-size: cover;
     overflow-y: scroll;
     
-    div{
-        background-color: rgba(0,0,0,0.3);
+    .background-filter{
+        background-color: rgba(0,0,0,0.5);
+        padding: 7px;
         height: inherit;
         width: inherit;
 

@@ -13,7 +13,7 @@ export const PageMovie = () => {
     const nav = useNavigate();
     return(
         <PageContainer url={movie.pageBanner}>
-           <div>
+           <div className="background-filter">
                <StateMovie movie={movie}/>
            </div>
         </PageContainer>

@@ -5,7 +5,7 @@ export const movies:movie[] = [
     {
         id: 1,
         title: "avatar 2",
-        trailer:"https://www.youtube.com/watch?v=G1fymUSI4cc",
+        trailer:"https://www.youtube.com/embed/G1fymUSI4cc",
        
         subtitle: "THE WAY OF WATER",
         pageBanner: "https://images3.alphacoders.com/129/1292401.jpg",
@@ -17,7 +17,7 @@ export const movies:movie[] = [
         id: 2,
         
         title: "jonh wick 4",
-        trailer:"https://www.youtube.com/watch?v=gZtmzT9Wgrw",
+        trailer:"https://www.youtube.com/embed/gZtmzT9Wgrw",
         subtitle: "BABA YAGA",
         pageBanner: "https://disneyplusbrasil.com.br/wp-content/uploads/2023/03/John-Wick-2.jpg",
         category: "Ação",
@@ -28,7 +28,7 @@ export const movies:movie[] = [
         id: 3,
         title: "super mario",
        
-        trailer:"https://www.youtube.com/watch?v=cDNkh5WybZo",
+        trailer:"https://www.youtube.com/embed/cDNkh5WybZo",
         subtitle: "O FILME",
         pageBanner: "https://images3.alphacoders.com/130/thumb-1920-1301279.jpg",
         category: "Infantil",
@@ -40,7 +40,7 @@ export const movies:movie[] = [
         title: "a freira",
       
         subtitle: "ORIGEM DO MAL",
-        trailer:"https://www.youtube.com/watch?v=4V44ew-laC4",
+        trailer:"https://www.youtube.com/embed/4V44ew-laC4",
         pageBanner: "https://macmagazine.com.br/wp-content/uploads/2019/05/16-freira.jpg",
         category: "Terror",
         ticketPrice: 18,
@@ -51,7 +51,7 @@ export const movies:movie[] = [
      
         title: "projeto X",
         subtitle: "Uma festa lendaria",
-        trailer:"https://www.youtube.com/watch?v=kFwGmQIe-rU",
+        trailer:"https://www.youtube.com/embed/kFwGmQIe-rU",
         pageBanner: "https://images.alphacoders.com/809/thumb-1920-809984.jpg",
         category: "Comedia",
         ticketPrice: 15,
@@ -62,7 +62,7 @@ export const movies:movie[] = [
        
         title: "homem aranha 3",
         subtitle: "No way home",
-        trailer:"https://www.youtube.com/watch?v=FDNNHh7TRN0",
+        trailer:"https://www.youtube.com/embed/FDNNHh7TRN0",
         pageBanner: "https://images2.alphacoders.com/117/1170277.jpg",
         category: "Ação",
         ticketPrice: 28,
@@ -73,7 +73,7 @@ export const movies:movie[] = [
         title: "os simpsons",
         subtitle: "O filme",
         
-        trailer:"https://www.youtube.com/watch?v=7UPVGlMjPLw",
+        trailer:"https://www.youtube.com/embed/7UPVGlMjPLw",
         pageBanner: "https://images4.alphacoders.com/114/1148429.jpg",
         category: "Infantil",
         ticketPrice: 13,
@@ -84,7 +84,7 @@ export const movies:movie[] = [
         title: "vingadores",
        
         subtitle: "Ultimato",
-        trailer:"https://www.youtube.com/watch?v=4QRdB4RAQMs",
+        trailer:"https://www.youtube.com/embed/4QRdB4RAQMs",
         pageBanner: "https://img.elo7.com.br/product/zoom/2168CA6/banner-painel-guerra-infinita-3x2m-festa-banner.jpg",
         category: "Ação",
         ticketPrice: 18,
@@ -95,7 +95,7 @@ export const movies:movie[] = [
        
         title: "annabele 2",
         subtitle: "A criação do mal",
-        trailer:"https://www.youtube.com/watch?v=pYdgJAaHSUY",
+        trailer:"https://www.youtube.com/embed/pYdgJAaHSUY",
         pageBanner: "https://i.pinimg.com/originals/9a/7f/e0/9a7fe0d554d4d3fabb144dc9aaff663b.jpg",
         category: "Terror",
         ticketPrice: 25,
@@ -106,7 +106,7 @@ export const movies:movie[] = [
         title: "eternos",
       
         subtitle: "IN THE BENNING´s",
-        trailer:"https://www.youtube.com/watch?v=PJza3ZaFeAU",
+        trailer:"https://www.youtube.com/embed/PJza3ZaFeAU",
         pageBanner: "https://img.olhardigital.com.br/wp-content/uploads/2021/10/eternos-x.jpg",
         category: "Ação",
         ticketPrice: 18,
