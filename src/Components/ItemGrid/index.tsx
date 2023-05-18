@@ -28,16 +28,7 @@ export const GridItem =({movie,food}:prop)=> {
                 <div></div>
                 <h2>{movie === undefined ? food.name : movie.title}</h2>
                 <span>Preço:R${movie === undefined ? food.price : movie.ticketPrice},00 </span>
-                {movie === undefined 
-                    ?
-                    ""
-                    :
-                    <>
-                    <span>| R${(movie.ticketPrice / 2).toFixed(0)},00</span>
-                    <br />
-                    </>
-                    
-                }
+                <br />
                 <span>
                     {movie === undefined 
                     ?
@@ -54,16 +45,7 @@ export const GridItem =({movie,food}:prop)=> {
                         :
                         ()=>{dispactch(setMoviePage(movie)),nav(`/InTheaters/${movie.title}`)}
                     }
-                >
-                    {
-                        movie===undefined 
-                        ? 
-                        "+" 
-                        :
-                        <BsFillTicketFill/>
-                    }
-
-                </button>
+                >Obter</button>
             </Item>
     )
 }

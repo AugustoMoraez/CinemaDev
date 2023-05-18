@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 export const PageContainer = styled.div`
     width: 100%;
-    
     overflow-x: hidden;
     overflow-y: scroll;
-    background-color: #333;
+    background-color: #f7f7f7;
     h1{
         text-align: center;
         font-size:80px;
@@ -15,9 +14,6 @@ export const PageContainer = styled.div`
 
     }
     @media(max-width:530px){
-        
-        
-    
         h1{
             font-size:50px;
         }
@@ -30,6 +26,7 @@ export const Grid = styled.div`
     width:100%;
     max-width:1440px;
     margin: auto;
+   
     
 
 `;

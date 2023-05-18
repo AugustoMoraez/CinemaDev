@@ -17,27 +17,16 @@ export const IconMenu = styled.div<IconMenuType>`
         
         position: absolute;
         top: 50px;
-        color: #fff;
+        color: #ff0050;
         transition: 0.5s;
         margin-left: -15px;
         font-weight: 600;
         z-index: 99;
 
-        &:hover{
-            color:#FF0050;
-        }
+       
     }
     .icon{
-        &:hover{
-        
-        div{
-         
-         transition: 0.6s;
-         background-color: #FF0050;
-        } 
-       
-     
-        }
+      
 
         div{
             z-index: 99;
@@ -48,7 +37,8 @@ export const IconMenu = styled.div<IconMenuType>`
             border-bottom-left-radius: 10px;
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
-            background-color: #fff;
+            background-color: #ff0050;
+            transition: 0.5s;
             position: absolute;
             
         }

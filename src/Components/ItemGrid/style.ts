@@ -6,11 +6,12 @@ type prop = {
 export const Item = styled.div<prop>`
     position: relative;
     text-align: center;
-    background-color: #444;
+    background-color: #fff;
+    
     margin: 10px;
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 0px 5px #333;
     
     transition: 0.3s;
     div{
@@ -21,35 +22,32 @@ export const Item = styled.div<prop>`
     background-size: cover;
    
     }
-    button{
-        cursor: pointer;
-        position: absolute;
+    button{        
         display: flex;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(255,0,80,1) 35%, rgba(0,212,255,1) 100%);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,0,80,1) 1%, rgba(0,212,255,1) 100%);
         color: #fff;
-        font-size: 24px;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        top: 76%;
-        left: 50%;
-        transform: translate(-50%, -76%);
+        font-size: 16px;
+        font-weight: bold;
+        margin: 10px auto ;
+        width: 120px;
+        height: 30px;
+        border-radius: 20px;
         cursor: pointer;
     }
     h2{
-        margin-top: 50px;
+        margin-top: 10px;
         margin-bottom: 5px;
         text-transform:capitalize ;
         color: #ff5f6d;
     }
     span{
         font-style: italic;
-  color: #666666;
+        color: #666666;
     }
     &:hover{
-        background-color: #555;
+        background-color: #eee;
         
     }
     

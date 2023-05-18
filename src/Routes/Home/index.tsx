@@ -1,8 +1,8 @@
 import { PageContainer,BannerArea,SearchArea} from "./style";
 import {BsFillTicketFill} from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { InputSearch } from "../../Components/inputSearch";
-import { ItemSearch } from "../../Components/searchAreaItem";
+import { InputSearch } from "../../Components/InputHome/inputSearch";
+import { ItemSearch } from "../../Components/InputHome/searchAreaItem";
 import { movies } from "../../API/movies";
 import { ChangeEvent, useState } from "react";
 import { movie } from "../../Types/movieTypes";

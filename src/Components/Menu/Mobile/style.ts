@@ -14,7 +14,7 @@ export const Container = styled.div`
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        border-top: 3px solid #f1f1f1;
+        border-top: 3px solid #eee;
         li a{
             color: #fff;
             font-size: 40px;

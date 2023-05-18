@@ -21,6 +21,12 @@ export const MovieContainer = styled.div`
     h1{
       text-transform: capitalize;
       font-size: 80px;
+      @media (max-width:700px) {
+        font-size:50px ;
+      }
+      @media (max-width:440px) {
+        font-size:30px ;
+      }
     }
     span{
       color:#ff0050;
