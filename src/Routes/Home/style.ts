@@ -8,7 +8,7 @@ export const PageContainer = styled.div`
     width: 100%;
     @media(max-width:810px){
         flex-direction: column;
-        margin-top:60px;
+        margin-top:10px;
     }
 `;
 export const BannerArea = styled.div`

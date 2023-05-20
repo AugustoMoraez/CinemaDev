@@ -1,12 +1,28 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+
+type prop = {
+    url:string
+}
+
+export const Container = styled.div<prop>`
     width: 100%;
     height: 100vh;
-    background-color: #fff;
-    overflow-y: scroll;
-    padding: 10px;
-    padding-bottom: 75px;
+    background-image: url(${(prop)=> prop.url});
+    background-size: cover;
+    background-position: center;
+    
+    
+    .filter{
+        background-color: rgba(0,0,0,0.5);
+        color: #fff;
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+        padding: 10px;
+        padding-bottom: 75px;
+    }
+    
     .header{
         h5{
             text-align: center;
@@ -16,6 +32,8 @@ export const Container = styled.div`
     }
     .btns{
         width: 100%;
+        max-width: 600px;
+        margin: auto;
         height: 75px;
         display: flex;
         justify-content: space-evenly;
@@ -29,20 +47,20 @@ export const Container = styled.div`
             &:hover,&:focus{
                 background-color: #fff;
                 color:#ff0050;
-                border: 1px solid #ff0050;
                 cursor: pointer;
             }
         }
+        
     }
     .room{
         width: 100%;
-        max-width: 1140px;
+        max-width: 600px;
         background-color: #333;
         border-radius: 10px;
         margin: 20px auto;
         .chairs{
             width: 100%;
-            max-width: 1140px;
+            max-width: 600px;
             display: grid;
             grid-template-columns: repeat(9,minmax(10px,1fr));
             padding: 20px;
@@ -69,14 +87,18 @@ export const Container = styled.div`
         .livre{
             background-color: #ff0050;
         }
+        .active{
+           background-color: #fff;
+           color:#ff0050;
+        }
     }
     .legenda{
         width: 100%;
-        max-width: 1140px;
+        max-width: 600px;
         padding: 10px;
         margin: auto;
         .item{
-            margin-bottom: 10px;
+            margin: 10px;
             display: flex;
             div{
                 margin-right: 10px;

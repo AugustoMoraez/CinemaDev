@@ -9,9 +9,9 @@ export const rooms: Sala[] = [
             {
                 horario: "19:00",
                 chairs: [
-                    { id: 1, status: "livre" },
+                    { id: 1, status: "ocupado" },
                     { id: 2, status: "ocupado" },
-                    { id: 3, status: "livre" },
+                    { id: 3, status: "ocupado" },
                     { id: 4, status: "livre" },
                     { id: 5, status: "livre" },
                     { id: 6, status: "ocupado" },
@@ -114,7 +114,7 @@ export const rooms: Sala[] = [
             {
                 horario: "20:30",
                 chairs: [
-                    { id: 1, status: "livre" },
+                    { id: 1, status: "ocupado" },
                     { id: 2, status: "ocupado" },
                     { id: 3, status: "livre" },
                     { id: 4, status: "livre" },
@@ -220,7 +220,7 @@ export const rooms: Sala[] = [
                 horario: "22:30",
                 chairs: [
                     { id: 1, status: "livre" },
-                    { id: 2, status: "ocupado" },
+                    { id: 2, status: "livre" },
                     { id: 3, status: "livre" },
                     { id: 4, status: "livre" },
                     { id: 5, status: "livre" },

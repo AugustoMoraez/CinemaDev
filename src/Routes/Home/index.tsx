@@ -17,17 +17,15 @@ export const Home = () => {
       
     const handleInputFilter = (e:ChangeEvent<HTMLInputElement>) => {
         setFilterVoid(false);
-        let filterName = e.target.value;
+        let filterName = e.target.value as string
         let newArray:movie[] = [];
-        for(let i = 0 ; i<=9 ; i++){
-            if(movies[i].title.includes(filterName)){
-                newArray.push(movies[i]);    
-            }
-        }
-        if(filter.length === 0){
+        newArray = movies.filter((item)=>{
+            return item.title.toLocaleLowerCase().indexOf(filterName.toLocaleLowerCase()) > -1
+        })
+        if(newArray.length > 1){
             setFilterVoid(true);
         }
-        setFilter(newArray)
+        setFilter(newArray);
     }
     
     return(

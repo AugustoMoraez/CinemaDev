@@ -3,7 +3,7 @@ import { movie  } from "../Types/movieTypes";
 export const movies:movie[] = [
     
     {
-        id: 1,
+        id: 0,
         title: "avatar 2",
         trailer:"https://www.youtube.com/embed/G1fymUSI4cc",
        
@@ -14,7 +14,7 @@ export const movies:movie[] = [
         descrition: "Os humanos desejam explorar a lua a fim de encontrar metais valisos, o que faz os Na'Vi aperfeiçoarem suas habilidades guerreiras. Como são incapazes de respirar o ar de Pandora, os humanos criam seres híbridos chamados de Avatar. Eles são comandados por seres humanos, através de uma tecnologia que permite que seus pensamentos sejam aplicados no corpo do Aavata"
     },
     {
-        id: 2,
+        id: 1,
         title: "jonh wick 4",
         trailer:"https://www.youtube.com/embed/gZtmzT9Wgrw",
         subtitle: "BABA YAGA",
@@ -24,7 +24,7 @@ export const movies:movie[] = [
         descrition: "John Wick está numa enrascada de enormes proporções depois de descumprir as regras do Hotel Continental. Caçado pelos mais habilidosos assassinos do mundo, ele enfrenta a Alta Cúpula em diversos cenários do mundo."
     },
     {
-        id: 3,
+        id: 2,
         title: "super mario",
        
         trailer:"https://www.youtube.com/embed/cDNkh5WybZo",
@@ -35,7 +35,7 @@ export const movies:movie[] = [
         descrition: "Mario é um encanador junto com seu irmão Luigi. Um dia, eles vão parar no reino dos cogumelos, governado pela Princesa Peach, mas ameaçado pelo rei dos Koopas, que faz de tudo para conseguir reinar em todos os lugares."
     },
     {
-        id: 4,
+        id: 3,
         title: "a freira",
       
         subtitle: "ORIGEM DO MAL",
@@ -46,7 +46,7 @@ export const movies:movie[] = [
         descrition: "Um padre é assassinado. Um mal está se espalhando. A sequência para o sucesso mundial A Freira irá acompanhar a Irmã Irene, que novamente se vê cara a cara com a força demoníaca Valak – o demônio freira”. Ainda bem superficial, mas que já garante o retorno de alguns rostos bem conhecidos — e temidos."
     },
     {
-        id: 5,
+        id: 4,
      
         title: "projeto X",
         subtitle: "Uma festa lendaria",
@@ -57,7 +57,7 @@ export const movies:movie[] = [
         descrition: "Três amigos de colégio planejam uma festa inesquecível para entrar para a história na tentativa de ficarem famosos. A notícia se espalha rapidamente e tudo foge ao controle quando os imprevistos começam a acontecer."
     },
     {
-        id: 6,
+        id: 5,
        
         title: "homem aranha 3",
         subtitle: "No way home",
@@ -68,7 +68,7 @@ export const movies:movie[] = [
         descrition: "Peter Parker tem a sua identidade secreta revelada e pede ajuda ao Doutor Estranho. Quando um feitiço para reverter o evento não sai como o esperado, o Homem-Aranha e seu companheiro dos Vingadores precisam enfrentar inimigos de todo o multiverso."
     },
     {
-        id: 7,
+        id: 6,
         title: "os simpsons",
         subtitle: "O filme",
         
@@ -79,7 +79,7 @@ export const movies:movie[] = [
         descrition: "Homer Simpson polui o lago de Springfield e acaba causando sérios danos para a cidade. Para amenizar o problema, a solução é colocar toda a cidade dentro de uma bolha, se isolando do resto do mundo."
     },
     {
-        id: 8,
+        id: 7,
         title: "vingadores",
        
         subtitle: "Ultimato",
@@ -90,7 +90,7 @@ export const movies:movie[] = [
         descrition: "Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar com a perda de amigos e entes queridos. Com Tony Stark vagando perdido no espaço sem água e comida, Steve Rogers e Natasha Romanov lideram a resistência contra o titã louco."
     },
     {
-        id: 9,
+        id: 8,
        
         title: "annabele 2",
         subtitle: "A criação do mal",
@@ -101,7 +101,7 @@ export const movies:movie[] = [
         descrition: "Anos após a trágica morte de sua filha, um habilidoso artesão de bonecas e sua esposa decidem, por caridade, acolher em sua casa uma freira e dezenas de meninas desalojadas de um orfanato. Atormentado pelas lembranças traumáticas, o casal ainda precisa lidar com um amendrontador demônio do passado: Annabelle, criação do artesão."
     },
     {
-        id: 10,
+        id: 9,
         title: "eternos",
       
         subtitle: "IN THE BENNING´s",

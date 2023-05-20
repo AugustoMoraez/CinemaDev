@@ -9,10 +9,8 @@ type prop = {
 
 export const StateMovie = ({movie}:prop) => {
     const nav = useNavigate();
-    const dispatch = useDispatch();
-    const NextPage = () => {
-        nav(`string text ${movie.title} string text`);
-    }
+    
+    
     return(
         <MovieContainer>
             <h3><Link to="/">CineDev</Link></h3>
@@ -26,7 +24,7 @@ export const StateMovie = ({movie}:prop) => {
                 <b>{movie.category.toUpperCase()}</b>
             </div>
            
-            <button >+ Ingresso</button>
+            <button onClick={()=>{nav(`/select-room/${movie.title}`)}} >+ Ingresso</button>
             
         </MovieContainer>
     )

@@ -10,47 +10,66 @@ type Prop = {
 
 export const PlaceChairPage = ({id}:Prop) => {
 
-    const movie = rooms[0];
-    const[room,setRoom] = useState(0);
-    const[chairs,setChairs] = useState<chair[]>(movie.cronogramas[room].chairs);
+    const room = rooms[id];
+    const[hour,setHour] = useState(0);
+    const[chairs,setChairs] = useState<chair[]>(room.cronogramas[hour].chairs);
     
     const selectHours = (room:number ) => {
-        setRoom(room);
+        setHour(room);
+        console.log(chairs);
+    }
+    const select = (e:React.MouseEvent<HTMLDivElement>) => {
+        const element = e.target as HTMLDivElement
+        
+        if(element.classList.contains("ocupado" ) === false){
+            if(element.classList.contains("active") === false){
+                element.classList.add("active")
+            }else{
+                element.classList.remove("active")
+            }
+        }
+        
     }
     
     return(
-        <Container>
-            
-            <div className="header">
-                <h5>Sala {id} N° <br />Selecione sua proltrona e horario:</h5>
-            </div>
-            <div className="btns">
-                <button onClick={()=>selectHours(0)}>19:00</button>
-                <button onClick={()=>selectHours(1)}>20:30</button>
-                <button onClick={()=>selectHours(2)}>23:30</button>
-            </div>
-            <div className="room">
+        <Container url={room.filme.pageBanner}>
+            <div className="filter">
 
-                <div className="chairs">
-                    {chairs.map((chair)=>(
-                        <div className={chair.status == "livre" ? "livre" : "ocupado"}>
-                            {chair.id}
-                        </div>
-                        
-                    ))}
+                <div className="header">
+                    <h5>Sala N° {id+1}  <br />Selecione sua proltrona e horario:</h5>
+                </div>
+                <div className="btns">
+                    <button onClick={()=>selectHours(0)}>19:00</button>
+                    <button onClick={()=>selectHours(1)}>20:30</button>
+                    <button onClick={()=>selectHours(2)}>23:30</button>
+                </div>
+                <div className="room">
+
+                    <div className="chairs">
+                        {chairs.map((chair)=>(
+                            <div key={chair.id} className={chair.status == "livre" ? "livre" : "ocupado"} onClick={select}>
+                                {chair.id}
+                            </div>
+                            
+                        ))}
+                    </div>
+
+                </div>
+                <div className="legenda">
+                    <h2>Legenda:</h2>
+                    <div className="item">
+                        <div></div>
+                        Livre
+                    </div>
+                    <div className="item">
+                        <div></div>
+                        Ocupado
+                    </div>
+                </div>
+                <div className="btns">
+                    <button onClick={()=>{}}>Adicionar</button>
                 </div>
 
-            </div>
-            <div className="legenda">
-                <h2>Legenda:</h2>
-                <div className="item">
-                    <div></div>
-                    Livre
-                </div>
-                <div className="item">
-                    <div></div>
-                    Ocupado
-                </div>
             </div>
         </Container>
     )
