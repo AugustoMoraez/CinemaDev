@@ -44,7 +44,7 @@ export const Container = styled.div<prop>`
             font-size: 20px;
             padding: 8px 10px;
             border-radius: 18px;
-            &:hover,&:focus{
+            &:hover{
                 background-color: #fff;
                 color:#ff0050;
                 cursor: pointer;

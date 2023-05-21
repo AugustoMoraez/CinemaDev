@@ -20,8 +20,8 @@ import { RootState } from "./Redux/store";
 
 
 export const App = () => {
-  // const bg = useSelector((state:RootState)=> state.bg)
-  const movie = useSelector((state:RootState)=> state.movie.MoviePage) 
+  
+  const movie = useSelector((state:RootState)=> state.movie) 
   const[toggle,setToggle]= useState(false);
 
   const handleToggle = () => {
@@ -40,7 +40,7 @@ export const App = () => {
               <Route path="/" element={<Home/>}/>
               <Route path="/InTheaters/:slug" element={<PageMovie/>}/> 
               <Route path="/InTheaters" element={<Theatres/>}/>
-              <Route path="/select-room/:slug" element={<PlaceChairPage id={movie.id}/>}/>
+              <Route path="/select-room/:slug" element={<PlaceChairPage id={movie.MoviePage.id}/>}/>
               <Route path="/Shop" element={<Shop/>}/> 
             </Routes>
             <MobileMenu/>

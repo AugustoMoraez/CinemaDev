@@ -1,7 +1,7 @@
 import { movie } from "./movieTypes"
 
 export type chair = {
-    id: number, status: "livre" | "ocupado"
+    id: number, status: "livre"| "ocupado";
 }
 
 type cronograma = {

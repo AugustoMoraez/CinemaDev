@@ -5,7 +5,7 @@ export const slice = createSlice({
     initialState: {
        
         MoviePage:{
-            id: 1,
+            id: 0,
             title: "avatar",
             trailer: "https://www.youtube.com/watch?v=G1fymUSI4cc",
             subtitle: "THE WAY OF WATER",
