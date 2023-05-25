@@ -14,8 +14,8 @@ export const Menu = styled.aside<menuType>`
     align-items: center;
     height: 100vh;
     width: ${props => props.display ? "75px" : "0px" } ;
-    border-right: 1px solid gray;
-    background-color: #000;
+    border-right: 1px solid #ddd;
+    background-color: #fff;
 
     nav ul,li{
         width: ${props => props.display ? "auto" : "0px" };       
@@ -32,13 +32,14 @@ export const Menu = styled.aside<menuType>`
             
         }
         svg{
-            color: #fff;
+            color: #ff0050;
             height: 40px;
             width: ${props => props.display ? "40px" : "0px" };
             transition: 0.6s;
+            margin: 5px;
         }
         span{
-            color: #000;
+            color: #fff;
             font-size: 10px;
             transition: 0.5s;
         }
@@ -47,7 +48,7 @@ export const Menu = styled.aside<menuType>`
                 color:#ff0050;
             }
             span{
-                color:#fff;
+                color:#ff0050;
             }
         }
         
