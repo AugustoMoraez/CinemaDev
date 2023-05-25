@@ -29,8 +29,6 @@ export const GridItem =({movie,food}:prop)=> {
         if(movie === undefined){
             if(user === null){
                 nav("/login")
-            }else{
-                dispatch(setUser({current:null}));
             }
 
         }else{
