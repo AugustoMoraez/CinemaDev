@@ -18,9 +18,28 @@ export const PlaceChairPage = ({ id }: Prop) => {
     let chairsSelect: number[] = []
 
 
-    const selectHours = (hour: number) => {
+    const selectHours = (e: React.MouseEvent,hour: number) => {
         setHours(hour);
         chairsSelect = [];
+        const btn = e.target as HTMLDivElement;
+        const btns = btn.parentElement as HTMLDivElement;
+
+        let array = btns.querySelectorAll("button");
+        array.forEach((item)=>{
+            item.classList.remove("active")
+        })
+        btn.classList.add("active")
+        
+
+        const filter = btns.parentElement ;
+        if(filter !== null){
+            const chairs = filter.querySelector(".room")?.querySelector(".chairs");
+            const elements = chairs?.querySelectorAll(".livre");
+            elements?.forEach((item)=>{
+                item.classList.remove("active");
+            })            
+        }  
+        
     }
 
     const Select = (e: React.MouseEvent) => {
@@ -38,10 +57,8 @@ export const PlaceChairPage = ({ id }: Prop) => {
         if (chairsSelect.find(item => item === id)) {
             const array = chairsSelect.filter(item => item !== id);
             chairsSelect = array;
-            console.log(chairsSelect)
         } else {
             chairsSelect.push(id)
-            console.log(chairsSelect)
         }
     }
 
@@ -53,12 +70,11 @@ export const PlaceChairPage = ({ id }: Prop) => {
                     <h5>Sala N° {id + 1}  <br />Selecione sua proltrona e horario:</h5>
                 </div>
                 <div className="btns">
-                    <button onClick={() => selectHours(0)}>19:00</button>
-                    <button onClick={() => selectHours(1)}>20:30</button>
-                    <button onClick={() => selectHours(2)}>23:30</button>
+                    <button onClick={(e) => selectHours(e,0)}>19:00</button>
+                    <button onClick={(e) => selectHours(e,1)}>20:30</button>
+                    <button onClick={(e) => selectHours(e,2)}>23:30</button>
                 </div>
                 <div className="room">
-
                     <div className="chairs">
                         {chairs.map((chair) => (
                             <div key={chair.id} className={chair.status == "livre" ? "livre" : "ocupado"}
@@ -68,7 +84,6 @@ export const PlaceChairPage = ({ id }: Prop) => {
 
                         ))}
                     </div>
-
                 </div>
                 <div className="legenda">
                     <h2>Legenda:</h2>

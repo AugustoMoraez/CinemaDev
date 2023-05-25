@@ -1,0 +1,62 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Progresso atual@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+Pagina Home:
+	90% Concluida, faltando apenas colocar a função nos itens do SearchArea.
+
+
+
+Pagina Em cartaz:
+	100% concluida cumprido seu papel de exibir os fimes e direcionando cada um para sua pagina de exibição.
+
+
+ 
+Pagina de exibição de filmes:
+	100% Concluida, exibindo informações de cada filme e direcionando para a pagina de selecionar cadeira e horario.
+
+
+
+Pagina PlaceChairs:
+	50% completa,estilização concluida, faltando fazer o Grid das cadeiras funcionar e o botão de adcionar ao carrinho
+
+
+
+Pagina FastFood:
+	Exibição concluida, faltando apenas adicionar a função de colocar os itens no carrinho.
+
+Pagina de login
+	deve ser criada.
+
+
+
+###############################################################TASK#################################################################
+
+*Principais
+->Criar Sistema de login
+Etapas:
+
+----->Criar um reducer que no momento ira funcionar como um "banco de dados".
+
+----->Criar uma rota com um componente pagina que deve ter um formulario de login/Cadastro que ira usar o reducer para cadastrar
+	o usuario ou checar se existe um igual ao que esta tentando logar.
+
+----->Tornar certas rotas dinamicas podendo ser acessadas somente se existir um usuario em login caso não direcionando o usuario
+	para pagina de login/registro
+
+
+
+->Criar Sistema de Carrinho
+
+
+*Secundarias (É necessario criar o sistema de login para prosseguir com essas tarefas)
+->Fazer a seleção de cadeiras funcionar
+->Fazer o botão adicionar ingressos no carrinho funcionar
+->Fazer o sistema de adionar um combo funcionar
+
+
+
+*Terceiras
+->Adicionar função de direcionamento dos itens do SearchArea na Pagina Home
+
+
+
+

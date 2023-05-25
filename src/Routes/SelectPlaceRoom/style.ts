@@ -45,10 +45,12 @@ export const Container = styled.div<prop>`
             padding: 8px 10px;
             border-radius: 18px;
             &:hover{
-                background-color: #fff;
-                color:#ff0050;
                 cursor: pointer;
             }
+        }
+        .active{
+            background-color: #fff;
+            color:#ff0050;
         }
         
     }
