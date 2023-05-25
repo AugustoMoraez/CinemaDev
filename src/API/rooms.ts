@@ -1,5 +1,5 @@
 import { movies } from "./movies";
-import { Sala } from "../Types/RoomType";
+import { Sala } from "../Types/room";
 
 export const rooms: Sala[] = [
     {

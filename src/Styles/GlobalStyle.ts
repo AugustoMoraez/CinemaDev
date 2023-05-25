@@ -16,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
     background: none;
     text-decoration: none;
     transition: 0.5s;
+    cursor: pointer;
   }
   ul,li{
     list-style: none;

@@ -1,45 +1,59 @@
 //components
-import {Menu} from "./style";
+import { Menu } from "./style";
 //libs
 import { Link } from "react-router-dom";
 //icons
-import {CiCalendarDate} from "react-icons/ci";
-import {MdFastfood} from "react-icons/md";
-import {BsFillTicketFill} from "react-icons/bs";
+import { FaUserAlt } from "react-icons/fa";
+import { MdFastfood } from "react-icons/md";
+import { BsFillTicketFill } from "react-icons/bs";
+//reducer
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { setUser } from "../../../Redux/Reducers/userReducer";
+import { RootState } from "../../../Redux/store";
+
 
 
 
 type asideType = {
-    display:boolean
-   
+    display: boolean
+
 }
 
-export const Aside = ({display}:asideType) => {
+export const Aside = ({ display }: asideType) => {
+    const dispatch = useDispatch();
+    const user = useSelector((state: RootState) => state.user.current);
 
-  
-    
-    return(
-        <Menu display = {display} >
+
+    return (
+        <Menu display={display} >
             <nav>
                 <ul>
                     <li>
-                       <Link to="/Realeses">
-                            <CiCalendarDate/>
-                            <span>Lançamentos</span>
-                       </Link>
-                       
+                        {user === null
+                            ?
+                            <Link to="/login" >
+                                <FaUserAlt />
+                                <span>Login</span>
+                            </Link>
+                            :
+                            <Link onClick={() => dispatch(setUser({ current: null }))} to="/">
+                                <FaUserAlt />
+                                <span>Logout</span>
+                            </Link>
+                        }
                     </li>
 
                     <li>
                         <Link to="/InTheaters">
-                            <BsFillTicketFill/>
+                            <BsFillTicketFill />
                             <span>Em cartaz</span>
                         </Link>
                     </li>
 
                     <li>
                         <Link to="/Shop">
-                            <MdFastfood/>
+                            <MdFastfood />
                             <span>FastFood</span>
                         </Link>
                     </li>

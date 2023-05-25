@@ -1,4 +1,4 @@
-import { movie } from "../../../Types/movieTypes";
+import { movie } from "../../../Types/movie";
 import { Item } from "./style";
 import {AiOutlineRight} from "react-icons/ai"
 

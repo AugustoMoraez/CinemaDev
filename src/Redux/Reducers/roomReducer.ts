@@ -3218,8 +3218,7 @@ const slice = createSlice({
     ],
     reducers:{
         EditRoom:(state,action)=>{
-           return [...state,
-            state[action.payload.movie].cronogramas[action.payload.hour].chairs = action.payload.chairs]
+           return [...state]
         },
         
     }

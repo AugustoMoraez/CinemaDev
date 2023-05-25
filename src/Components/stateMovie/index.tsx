@@ -1,7 +1,9 @@
 import { MovieContainer, Iframe} from "./style";
-import { movie } from "../../Types/movieTypes";
+import { movie } from "../../Types/movie";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
+import { RootState } from "../../Redux/store";
 
 type prop = {
     movie:movie
@@ -9,7 +11,15 @@ type prop = {
 
 export const StateMovie = ({movie}:prop) => {
     const nav = useNavigate();
+    const user = useSelector((state: RootState) => state.user.current);
     
+    const redirection = () => {
+        if(user === null){
+            nav("/login")
+        }else{
+            nav(`/select-room/${movie.title}`) 
+        }
+    }
     
     return(
         <MovieContainer>
@@ -24,7 +34,7 @@ export const StateMovie = ({movie}:prop) => {
                 <b>{movie.category.toUpperCase()}</b>
             </div>
            
-            <button onClick={()=>{nav(`/select-room/${movie.title}`)}} >+ Ingresso</button>
+            <button onClick={redirection}>+ Ingresso</button>
             
         </MovieContainer>
     )

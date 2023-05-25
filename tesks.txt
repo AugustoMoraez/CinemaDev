@@ -35,6 +35,13 @@ Pagina de login
 Etapas:
 
 ----->Criar um reducer que no momento ira funcionar como um "banco de dados".
+	#o state vai ser do tipo user ou null
+	#action[ login / logout ]
+
+
+
+
+
 
 ----->Criar uma rota com um componente pagina que deve ter um formulario de login/Cadastro que ira usar o reducer para cadastrar
 	o usuario ou checar se existe um igual ao que esta tentando logar.
@@ -48,7 +55,7 @@ Etapas:
 
 
 *Secundarias (É necessario criar o sistema de login para prosseguir com essas tarefas)
-->Fazer a seleção de cadeiras funcionar
+
 ->Fazer o botão adicionar ingressos no carrinho funcionar
 ->Fazer o sistema de adionar um combo funcionar
 

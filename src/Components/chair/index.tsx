@@ -1,5 +1,5 @@
 import { Item } from "./style"
-import { chair } from "../../Types/RoomType";
+import { chair } from "../../Types/room";
 
 type prop= {
     chair:chair

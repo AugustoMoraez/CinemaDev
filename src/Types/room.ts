@@ -1,4 +1,4 @@
-import { movie } from "./movieTypes"
+import { movie } from "./movie"
 
 export type chair = {
     id: number, status: "livre"| "ocupado";

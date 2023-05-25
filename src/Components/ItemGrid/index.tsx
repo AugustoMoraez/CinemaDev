@@ -1,10 +1,13 @@
 import { food } from "../../Types/food";
-import { movie } from "../../Types/movieTypes";
+import { movie } from "../../Types/movie";
 import { Item } from "./style";
 import { useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
+//reducers
 import { setMoviePage } from "../../Redux/Reducers/movieReducer";
-import {BsFillTicketFill} from "react-icons/bs";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
+import { RootState } from "../../Redux/store";
+import { setUser } from "../../Redux/Reducers/userReducer";
 
 
 type prop = {
@@ -18,8 +21,23 @@ export const GridItem =({movie,food}:prop)=> {
     
     const nav = useNavigate();
 
-    const dispactch = useDispatch();
+    const dispatch = useDispatch();
     
+    const user = useSelector((state:RootState) => state.user.current);
+    
+    const redirection = () => {
+        if(movie === undefined){
+            if(user === null){
+                nav("/login")
+            }else{
+                dispatch(setUser({current:null}));
+            }
+
+        }else{
+            dispatch(setMoviePage(movie))
+            nav(`/InTheaters/${movie.title}`) 
+        }
+    }
 
     
     return(
@@ -37,15 +55,7 @@ export const GridItem =({movie,food}:prop)=> {
                     movie.category
                     }
                 </span>
-                <button onClick=
-                    {
-                        movie===undefined 
-                        ? 
-                        ()=>"" 
-                        :
-                        ()=>{dispactch(setMoviePage(movie)),nav(`/InTheaters/${movie.title}`)}
-                    }
-                >Obter</button>
+                <button onClick={redirection} >Obter</button>
             </Item>
     )
 }

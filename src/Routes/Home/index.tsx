@@ -5,7 +5,7 @@ import { InputSearch } from "../../Components/InputHome/inputSearch";
 import { ItemSearch } from "../../Components/InputHome/searchAreaItem";
 import { movies } from "../../API/movies";
 import { ChangeEvent, useState } from "react";
-import { movie } from "../../Types/movieTypes";
+import { movie } from "../../Types/movie";
 
 
 
