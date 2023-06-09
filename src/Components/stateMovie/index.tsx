@@ -1,7 +1,6 @@
 import { MovieContainer, Iframe} from "./style";
 import { movie } from "../../Types/movie";
 import { Link, useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { RootState } from "../../Redux/store";
 

@@ -7,7 +7,7 @@ import { setMoviePage } from "../../Redux/Reducers/movieReducer";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { RootState } from "../../Redux/store";
-import { setUser } from "../../Redux/Reducers/userReducer";
+
 
 
 type prop = {

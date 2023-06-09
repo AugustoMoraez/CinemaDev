@@ -3217,7 +3217,7 @@ const slice = createSlice({
         }
     ],
     reducers:{
-        EditRoom:(state,action)=>{
+        EditRoom:(state)=>{
            return [...state]
         },
         

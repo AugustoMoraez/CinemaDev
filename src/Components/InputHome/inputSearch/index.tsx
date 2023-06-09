@@ -1,6 +1,6 @@
 import {BsSearch} from "react-icons/bs";
 import { InputArea } from "./style";
-import React, {useState, ChangeEvent} from "react";
+import {useState, ChangeEvent} from "react";
 
 
 

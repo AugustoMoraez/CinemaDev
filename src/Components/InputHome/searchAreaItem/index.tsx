@@ -1,8 +1,6 @@
 import { movie } from "../../../Types/movie";
 import { Item } from "./style";
-import { AiOutlineRight } from "react-icons/ai"
-import { RootState } from "../../../Redux/store";
-import { useSelector } from "react-redux";
+import { AiOutlineRight } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setMoviePage } from "../../../Redux/Reducers/movieReducer";
