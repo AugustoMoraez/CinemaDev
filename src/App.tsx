@@ -36,7 +36,7 @@ export const App = () => {
           <Menu func={handleToggle} toggle={toggle} />
         <Container>
           <Content>
-            <Aside display={toggle}  />
+            <Aside toggle={toggle} />
             <Routes>
               <Route path="/" element={<Home/>}/>
               <Route path="/InTheaters/:slug" element={<PageMovie/>}/> 

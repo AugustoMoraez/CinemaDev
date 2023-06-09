@@ -2,23 +2,23 @@ import styled from "styled-components";
 
 
 type menuType = {
-    display:boolean,
+    toggle:true | false
   
 }
 export const Menu = styled.aside<menuType>`
     
     display:flex;
-    opacity: ${props => props.display ? "1" : "0" } ;
+    opacity: ${props => props.toggle ? "1" : "0" } ;
     transition: 0.5s ;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: ${props => props.display ? "75px" : "0px" } ;
+    width: ${props => props.toggle ? "75px" : "0px" } ;
     border-right: 1px solid #ddd;
     background-color: #fff;
 
     nav ul,li{
-        width: ${props => props.display ? "auto" : "0px" };       
+        width: ${props => props.toggle ? "auto" : "0px" };       
     }
     nav ul li {
         margin-top: 50px;
@@ -34,7 +34,7 @@ export const Menu = styled.aside<menuType>`
         svg{
             color: #ff0050;
             height: 40px;
-            width: ${props => props.display ? "40px" : "0px" };
+            width: ${props => props.toggle ? "40px" : "0px" };
             transition: 0.6s;
             margin: 5px;
         }

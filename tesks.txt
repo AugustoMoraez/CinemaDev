@@ -24,7 +24,7 @@ Pagina FastFood:
 	Exibição concluida, faltando apenas adicionar a função de colocar os itens no carrinho.
 
 Pagina de login
-	deve ser criada.
+	criada com funcionamento parcial.
 
 
 

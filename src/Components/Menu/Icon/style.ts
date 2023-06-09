@@ -4,11 +4,11 @@ import styled from "styled-components";
 
 
 
-type IconMenuType = {
+type Prop = {
     toggle:boolean
 }
 
-export const IconMenu = styled.div<IconMenuType>`
+export const IconMenu = styled.div<Prop>`
    
     position: relative;
     cursor: pointer;

@@ -21,7 +21,7 @@ export const Bg = styled.div<bgType>`
 
 export const Container = styled.div`
     height: 100vh;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.1);
     display: flex;    
 `;
 

@@ -15,18 +15,18 @@ import { RootState } from "../../../Redux/store";
 
 
 
-type asideType = {
-    display: boolean
+type props = {
+    toggle:boolean ;
 
 }
 
-export const Aside = ({ display }: asideType) => {
+export const Aside = ({ toggle }: props) => {
     const dispatch = useDispatch();
     const user = useSelector((state: RootState) => state.user.current);
 
 
     return (
-        <Menu display={display} >
+        <Menu toggle={toggle} >
             <nav>
                 <ul>
                     <li>
